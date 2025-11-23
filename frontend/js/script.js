@@ -202,6 +202,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
             form.reset();
             
+            // === RESET DO FORMULÁRIO PARA CORPO DO LAUDO ===
+            document.getElementById('tipo-corpo').checked = true; // Volta para Corpo
+            document.getElementById('tipo-conclusao').checked = false;
+            grupoLetraManual.style.display = 'none'; // Esconde campo de letra
+            inputLetraManual.value = ''; // Limpa campo de letra
+            // ================================================
+
             // Recarrega o acervo e reaplica os filtros
             await carregarAcervo();
             
@@ -232,17 +239,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Lógica para Deletar
         if (target.classList.contains('btn-deletar-frase')) {
-            if (confirm(`Tem certeza que deseja deletar a frase com alias "${alias}"?`)) {
-                try {
-                    const response = await fetch(`${API_URL}/${alias}`, { method: 'DELETE' });
-                    if (!response.ok) throw new Error('Falha ao deletar');
-                    fraseItem.remove();
-                    alert('Frase deletada com sucesso!');
-                    carregarAcervo(); // Recarrega para atualizar contagem
-                } catch (error) {
-                    console.error('Erro ao deletar:', error);
-                    alert('Não foi possível deletar a frase.');
-                }
+            // Executa diretamente sem confirmação
+            try {
+                const response = await fetch(`${API_URL}/${alias}`, { method: 'DELETE' });
+                if (!response.ok) throw new Error('Falha ao deletar');
+                fraseItem.remove();
+                // Opcional: alert('Frase deletada com sucesso!');
+                carregarAcervo(); // Recarrega para atualizar contagem
+            } catch (error) {
+                console.error('Erro ao deletar:', error);
+                alert('Não foi possível deletar a frase.');
             }
         }
 

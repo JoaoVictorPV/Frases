@@ -16,12 +16,16 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .container {
     max-width: 900px;
     margin: 0 auto;
     padding: 20px;
+    flex: 1; /* Empurra o rodapé para baixo */
 }
 
 header {
@@ -83,10 +87,17 @@ textarea {
     gap: 30px;
 }
 
+/* Título do tipo de frase (label principal) não deve parecer botão */
+.tipo-frase > label {
+    margin-bottom: 0;
+    /* Reseta estilos caso herde algo indesejado, mas .form-group label já cuida disso */
+}
+
 .radio-group {
     display: flex;
     align-items: center;
     gap: 8px;
+    position: relative;
 }
 
 .btn-submit {
@@ -275,35 +286,48 @@ textarea {
     color: var(--cor-primaria);
 }
 
-/* Melhoria Estética para Rádios */
-.tipo-frase .radio-group {
-    position: relative;
-}
-
-.tipo-frase input[type="radio"] {
+/* Melhoria Estética para Rádios - Aplicando APENAS aos labels dentro de .radio-group */
+.tipo-frase .radio-group input[type="radio"] {
     opacity: 0;
     position: absolute;
     width: 100%;
     height: 100%;
+    cursor: pointer;
+    z-index: 1;
 }
 
-.tipo-frase label {
+.tipo-frase .radio-group label {
     padding: 10px 20px;
     border: 2px solid var(--cor-borda);
     border-radius: 20px;
     cursor: pointer;
     transition: all 0.3s ease;
     font-weight: 500;
+    color: var(--cor-texto);
 }
 
-.tipo-frase input[type="radio"]:checked + label {
+.tipo-frase .radio-group input[type="radio"]:checked + label {
     background-color: var(--cor-secundaria);
     color: var(--cor-branco);
     border-color: var(--cor-secundaria);
 }
 
-.tipo-frase input[type="radio"]:focus + label {
+.tipo-frase .radio-group input[type="radio"]:focus + label {
     border-color: var(--cor-primaria);
+}
+
+/* Footer */
+.main-footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 1px solid #eee;
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.main-footer p {
+    margin: 5px 0;
 }
 
 /* Responsividade */
