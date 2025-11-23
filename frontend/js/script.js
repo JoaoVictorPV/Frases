@@ -239,16 +239,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Lógica para Deletar
         if (target.classList.contains('btn-deletar-frase')) {
-            // Executa diretamente sem confirmação
+            // Executa diretamente sem confirmação e sem avisos
             try {
-                const response = await fetch(`${API_URL}/${alias}`, { method: 'DELETE' });
+                // encodeURIComponent é CRITICO para aliases com caracteres como '|'
+                const response = await fetch(`${API_URL}/${encodeURIComponent(alias)}`, { method: 'DELETE' });
                 if (!response.ok) throw new Error('Falha ao deletar');
                 fraseItem.remove();
-                // Opcional: alert('Frase deletada com sucesso!');
-                carregarAcervo(); // Recarrega para atualizar contagem
+                carregarAcervo(); 
             } catch (error) {
                 console.error('Erro ao deletar:', error);
-                alert('Não foi possível deletar a frase.');
+                // Silencioso como solicitado, apenas log no console
             }
         }
 
@@ -277,7 +277,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (target.classList.contains('btn-salvar-frase')) {
             const novoTexto = fraseTextoDiv.textContent;
             try {
-                const response = await fetch(`${API_URL}/${alias}`, {
+                const response = await fetch(`${API_URL}/${encodeURIComponent(alias)}`, {
                     method: 'PUT',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ texto: novoTexto })
@@ -289,11 +289,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 fraseItem.querySelector('.btn-deletar-frase').style.display = 'inline-block';
                 fraseItem.querySelector('.btn-salvar-frase').style.display = 'none';
                 fraseItem.querySelector('.btn-cancelar-edicao').style.display = 'none';
-                alert('Frase salva com sucesso!');
-                dadosFrases[alias.substring(1, 4).toUpperCase()].estruturas[alias.substring(4, 5)].frases[alias] = novoTexto; // Atualiza localmente
+                // Sem alert de sucesso
+                
+                // Atualiza localmente (tentativa segura)
+                try {
+                    dadosFrases[alias.substring(1, 4).toUpperCase()].estruturas[alias.substring(4, 5)].frases[alias] = novoTexto;
+                } catch(e) { console.log("Erro ao atualizar cache local, mas salvo no server"); }
             } catch (error) {
                 console.error('Erro ao salvar:', error);
-                alert('Não foi possível salvar a alteração.');
             }
         }
 

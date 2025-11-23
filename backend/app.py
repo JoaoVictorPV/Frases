@@ -241,6 +241,8 @@ def adicionar_frase():
 
 @app.route('/api/frases/<string:alias>', methods=['DELETE'])
 def deletar_frase(alias):
+    # Limpa o alias de espaços em branco que possam ter vindo na URL
+    alias = alias.strip()
     conn = get_db_connection()
     if conn:
         sucesso = db_deletar_frase(conn, alias)
@@ -265,6 +267,7 @@ def deletar_frase(alias):
 
 @app.route('/api/frases/<string:alias>', methods=['PUT'])
 def editar_frase(alias):
+    alias = alias.strip()
     novo_texto = request.json.get('texto')
     if not novo_texto: return jsonify({"erro": "Texto ausente"}), 400
 
