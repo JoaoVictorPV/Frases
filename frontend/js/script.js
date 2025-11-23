@@ -248,7 +248,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 carregarAcervo(); 
             } catch (error) {
                 console.error('Erro ao deletar:', error);
-                // Silencioso como solicitado, apenas log no console
+                // Silencioso como solicitado
             }
         }
 
@@ -291,10 +291,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 fraseItem.querySelector('.btn-cancelar-edicao').style.display = 'none';
                 // Sem alert de sucesso
                 
-                // Atualiza localmente (tentativa segura)
+                // Atualiza localmente
                 try {
                     dadosFrases[alias.substring(1, 4).toUpperCase()].estruturas[alias.substring(4, 5)].frases[alias] = novoTexto;
-                } catch(e) { console.log("Erro ao atualizar cache local, mas salvo no server"); }
+                } catch(e) {}
             } catch (error) {
                 console.error('Erro ao salvar:', error);
             }
