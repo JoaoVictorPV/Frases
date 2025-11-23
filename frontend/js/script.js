@@ -193,13 +193,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const resultado = await response.json();
             
-            // Mostra mensagem de sucesso
+            // Mostra mensagem de sucesso - MANTÉM VISÍVEL (sem setTimeout)
             mensagemSucesso.textContent = `Frase adicionada com sucesso! Alias gerado: ${resultado.alias}`;
             mensagemSucesso.style.display = 'block';
-            setTimeout(() => {
-                mensagemSucesso.style.display = 'none';
-            }, 4000);
-
+            
             form.reset();
             
             // === RESET DO FORMULÁRIO PARA CORPO DO LAUDO ===
@@ -219,7 +216,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         } catch (error) {
             console.error('Falha ao enviar formulário:', error);
-            alert('Não foi possível adicionar a frase. Verifique o console para mais detalhes.');
+            // Mensagem de erro permanente se falhar
+            mensagemSucesso.textContent = 'Erro ao adicionar frase. Verifique os dados.';
+            mensagemSucesso.style.backgroundColor = '#e74c3c';
+            mensagemSucesso.style.display = 'block';
         }
     });
 
@@ -248,7 +248,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 carregarAcervo(); 
             } catch (error) {
                 console.error('Erro ao deletar:', error);
-                // Silencioso como solicitado
+                // Silencioso como solicitado, apenas log no console
             }
         }
 
@@ -266,7 +266,25 @@ document.addEventListener('DOMContentLoaded', () => {
         if (target.classList.contains('btn-cancelar-edicao')) {
             fraseTextoDiv.contentEditable = false;
             // Recarrega a frase original
-            fraseTextoDiv.textContent = dadosFrases[alias.substring(1, 4).toUpperCase()].estruturas[alias.substring(4, 5)].frases[alias];
+            // Tenta buscar a frase localmente de forma segura
+            let fraseOriginal = "";
+            try {
+                // Acesso direto mais seguro
+                // Estrutura do alias: TIPO(1) + SEGMENTO(3) + ESTRUTURA(1) + LETRA(1)
+                // Ex: _omb1a ou |omb1a
+                // O segmento está nos índices 1,2,3 (3 caracteres)
+                // A estrutura está no índice 4 (1 caractere)
+                const segId = alias.substring(1, 4).toUpperCase();
+                const estId = alias.substring(4, 5);
+                if (dadosFrases[segId] && 
+                    dadosFrases[segId].estruturas[estId] && 
+                    dadosFrases[segId].estruturas[estId].frases[alias]) {
+                    fraseOriginal = dadosFrases[segId].estruturas[estId].frases[alias];
+                }
+            } catch (e) { console.error("Erro ao restaurar frase", e); }
+            
+            if (fraseOriginal) fraseTextoDiv.textContent = fraseOriginal;
+            
             fraseItem.querySelector('.btn-editar-frase').style.display = 'inline-block';
             fraseItem.querySelector('.btn-deletar-frase').style.display = 'inline-block';
             fraseItem.querySelector('.btn-salvar-frase').style.display = 'none';
@@ -291,10 +309,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 fraseItem.querySelector('.btn-cancelar-edicao').style.display = 'none';
                 // Sem alert de sucesso
                 
-                // Atualiza localmente
+                // Atualiza localmente (tentativa segura)
                 try {
-                    dadosFrases[alias.substring(1, 4).toUpperCase()].estruturas[alias.substring(4, 5)].frases[alias] = novoTexto;
-                } catch(e) {}
+                    const segId = alias.substring(1, 4).toUpperCase();
+                    const estId = alias.substring(4, 5);
+                    if (dadosFrases[segId] && dadosFrases[segId].estruturas[estId]) {
+                        dadosFrases[segId].estruturas[estId].frases[alias] = novoTexto;
+                    }
+                } catch(e) { console.log("Erro ao atualizar cache local, mas salvo no server"); }
             } catch (error) {
                 console.error('Erro ao salvar:', error);
             }
@@ -314,14 +336,19 @@ document.addEventListener('DOMContentLoaded', () => {
                         const err = await response.json();
                         throw new Error(err.erro || 'Falha ao renomear');
                     }
-                    alert('Alias renomeado com sucesso! O acervo será recarregado.');
+                    // Alert mantido aqui pois é uma ação complexa que muda a estrutura, feedback é útil
+                    // Mas o usuário pediu para remover todos os avisos? "nenhuma acao dessa funciona... corrija tudo"
+                    // Ele disse "o comando deve simplesmente executar a ordem sem qualquer confirmacao".
+                    // Vou remover o alert de sucesso daqui também.
+                    // alert('Alias renomeado com sucesso! O acervo será recarregado.');
                     carregarAcervo();
                 } catch (error) {
                     console.error('Erro ao renomear:', error);
-                    alert(`Não foi possível renomear: ${error.message}`);
+                    // alert(`Não foi possível renomear: ${error.message}`); // Removido para silêncio
                 }
             } else if (novaLetra !== null) {
-                alert('Por favor, insira uma única letra válida.');
+                // Esse alert de validação de input talvez seja bom manter, mas ele pediu sem avisos.
+                // alert('Por favor, insira uma única letra válida.');
             }
         }
     });
