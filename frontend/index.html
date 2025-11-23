@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Frases Radiológicas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Gerenciador de Frases Radiológicas</h1>
+            <p>Adicione e organize suas frases de laudo de forma simples e eficiente.</p>
+            <div style="margin-top: 1rem;">
+                <a href="busca.html" class="btn-secondary" style="text-decoration: none; display: inline-block;">🔍 Ir para Busca Rápida</a>
+            </div>
+        </header>
+
+        <main>
+            <section class="form-section card">
+                <h2>Adicionar Nova Frase</h2>
+                <form id="form-adicionar-frase">
+                    <div class="form-group tipo-frase">
+                        <label>Tipo de Frase:</label>
+                        <div class="radio-group">
+                            <input type="radio" id="tipo-corpo" name="tipo" value="_" checked>
+                            <label for="tipo-corpo">(_) Corpo do Laudo</label>
+                        </div>
+                        <div class="radio-group">
+                            <input type="radio" id="tipo-conclusao" name="tipo" value="|">
+                            <label for="tipo-conclusao">(|) Conclusão</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="select-segmento">Segmento Anatômico:</label>
+                        <select id="select-segmento" name="segmento" required>
+                            <option value="" disabled selected>Selecione um segmento...</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="select-estrutura">Estrutura Referida:</label>
+                        <select id="select-estrutura" name="estrutura" required>
+                            <option value="" disabled selected>Selecione uma estrutura...</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group" id="grupo-letra-manual" style="display: none;">
+                        <label for="input-letra-manual">Letra da Frase Correspondente:</label>
+                        <input type="text" id="input-letra-manual" name="letra_manual" maxlength="1" placeholder="Ex: a">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="textarea-texto">Texto da Frase:</label>
+                        <textarea id="textarea-texto" name="texto" rows="5" placeholder="Digite ou cole a frase aqui..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Adicionar Frase</button>
+                </form>
+                <div id="mensagem-sucesso" class="mensagem" style="display: none;"></div>
+            </section>
+
+            <section class="visualizador-section">
+                <div class="visualizador-header">
+                    <h2>Acervo de Frases</h2>
+                    <button id="btn-exportar-txt" class="btn-secondary">Exportar para TXT</button>
+                </div>
+                <div id="acervo-container">
+                    <!-- O conteúdo será carregado dinamicamente aqui -->
+                </div>
+                <div id="contador-frases" class="contador-frases">
+                    <!-- Contagem de frases será inserida aqui -->
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

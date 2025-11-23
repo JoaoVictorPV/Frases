@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca Rápida - Frases Radiológicas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        .busca-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .search-container {
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            position: relative;
+        }
+        .search-input {
+            width: 100%;
+            padding: 1.2rem;
+            font-size: 1.2rem;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+        .search-input:focus {
+            outline: none;
+            border-color: #3498db;
+            box-shadow: 0 6px 12px rgba(52, 152, 219, 0.15);
+        }
+        .nav-link {
+            display: inline-block;
+            margin-top: 1rem;
+            color: #7f8c8d;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        .nav-link:hover {
+            color: #3498db;
+        }
+        .resultado-item {
+            background: white;
+            border-radius: 8px;
+            padding: 1.2rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            border-left: 4px solid transparent;
+        }
+        .resultado-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-left-color: #3498db;
+        }
+        .resultado-item.copiado {
+            background-color: #e8f8f5;
+            border-left-color: #2ecc71;
+        }
+        .resultado-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
+        .resultado-alias {
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            color: #2c3e50;
+            background: #ecf0f1;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+        }
+        .resultado-meta {
+            font-size: 0.8rem;
+            color: #95a5a6;
+        }
+        .resultado-texto {
+            color: #34495e;
+            line-height: 1.5;
+        }
+        .no-results {
+            text-align: center;
+            color: #bdc3c7;
+            margin-top: 3rem;
+        }
+        .copy-hint {
+            font-size: 0.8rem;
+            color: #2ecc71;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .resultado-item:hover .copy-hint {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="busca-header">
+            <h1>Busca Rápida de Frases</h1>
+            <p>Digite para encontrar e clique para copiar.</p>
+            <a href="index.html" class="nav-link">← Voltar para o Gerenciador</a>
+        </header>
+
+        <main>
+            <div class="search-container">
+                <input type="text" id="search-input" class="search-input" placeholder="Pesquise por código (ex: omb1a) ou texto..." autofocus>
+            </div>
+
+            <div id="resultados-container">
+                <!-- Resultados aparecerão aqui -->
+            </div>
+        </main>
+    </div>
+
+    <script src="js/busca.js"></script>
+</body>
+</html>

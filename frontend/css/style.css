@@ -1,0 +1,325 @@
+:root {
+    --cor-primaria: #005f73;
+    --cor-secundaria: #0a9396;
+    --cor-fundo: #f4f4f9;
+    --cor-texto: #333;
+    --cor-borda: #ddd;
+    --cor-sombra: rgba(0, 0, 0, 0.1);
+    --cor-sucesso: #2a9d8f;
+    --cor-branco: #fff;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    color: var(--cor-primaria);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.card {
+    background-color: var(--cor-branco);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--cor-sombra);
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: var(--cor-primaria);
+}
+
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--cor-borda);
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--cor-secundaria);
+}
+
+textarea {
+    resize: vertical;
+}
+
+.tipo-frase {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-submit {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-branco);
+    border: none;
+    padding: 15px 25px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.btn-submit:hover {
+    background-color: var(--cor-primaria);
+}
+
+.mensagem {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 4px;
+    background-color: var(--cor-sucesso);
+    color: var(--cor-branco);
+    text-align: center;
+}
+
+.visualizador-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.visualizador-header h2 {
+    color: var(--cor-primaria);
+    margin: 0;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--cor-primaria);
+    border: 2px solid var(--cor-secundaria);
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-branco);
+}
+
+.segmento-item {
+    background-color: var(--cor-branco);
+    border: 1px solid var(--cor-borda);
+    border-radius: 8px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.segmento-header {
+    padding: 15px 20px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.segmento-header:hover {
+    background-color: #eef;
+}
+
+.segmento-header::after {
+    content: '▼';
+    font-size: 12px;
+    transition: transform 0.3s;
+}
+
+.segmento-item.open .segmento-header::after {
+    transform: rotate(180deg);
+}
+
+.estrutura-content {
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out, padding 0.5s ease-out;
+}
+
+.segmento-item.open .estrutura-content {
+    padding: 20px;
+    max-height: 500px; /* Altura máxima antes do scroll */
+    overflow-y: auto;
+}
+
+.frase-item {
+    display: flex;
+    gap: 15px;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.frase-item:last-child {
+    border-bottom: none;
+}
+
+.frase-alias {
+    font-weight: 700;
+    color: var(--cor-secundaria);
+    flex-shrink: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.frase-texto {
+    white-space: pre-wrap; /* Mantém as quebras de linha do texto */
+    flex-grow: 1;
+    padding: 5px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.frase-alias {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.alias-actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 2px;
+    display: none; /* Oculto por padrão */
+}
+
+.frase-alias:hover .alias-actions button {
+    display: inline-block; /* Mostra no hover */
+}
+
+.frase-texto[contenteditable="true"] {
+    background-color: #eef;
+    outline: 1px solid var(--cor-secundaria);
+}
+
+.frase-actions {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.frase-actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.frase-actions button:hover {
+    background-color: #f0f0f0;
+}
+
+.contador-frases {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: var(--cor-branco);
+    border: 1px solid var(--cor-borda);
+    border-radius: 8px;
+    text-align: center;
+    font-size: 14px;
+    color: var(--cor-texto);
+    line-height: 1.8;
+}
+
+.contador-frases strong {
+    color: var(--cor-primaria);
+}
+
+/* Melhoria Estética para Rádios */
+.tipo-frase .radio-group {
+    position: relative;
+}
+
+.tipo-frase input[type="radio"] {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.tipo-frase label {
+    padding: 10px 20px;
+    border: 2px solid var(--cor-borda);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.tipo-frase input[type="radio"]:checked + label {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-branco);
+    border-color: var(--cor-secundaria);
+}
+
+.tipo-frase input[type="radio"]:focus + label {
+    border-color: var(--cor-primaria);
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    .container {
+        padding: 10px;
+    }
+    .card {
+        padding: 20px;
+    }
+    .tipo-frase {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}

@@ -1,0 +1,954 @@
+{
+  "GER": {
+    "nome": "GERAL",
+    "estruturas": {
+      "1": {
+        "nome": "OSSO",
+        "frases": {
+          "_ger1a": "O restante da medular óssea tem intensidade de sinal normal.",
+          "_ger1b": "Imagem ovalada e bem delimitada na medular óssea da região metafisária do fêmur da tíbia, com bordos escleróticos e bem delimitados, apresentando predomínio de hipersinal em T2 e discretos focos hipointensos de permeio, medindo 12 mm, sugerindo lesão óssea de matriz condral (encondroma).",
+          "|ger1b": "Lesão óssea sugestiva de encondroma na região metafisária do fêmur da tíbia.\nLesão óssea que pode representar encondroma na região metafisária do fêmur da tíbia.",
+          "_ger1c": "Pequena imagem sugestiva de enostose na asa do osso ilíaco direito no colo femoral esquerdo, medindo 8 mm, habitualmente sem significado clínico.",
+          "_ger1d": "Discreta heterogeneidade de sinais da medular óssea das estruturas avaliadas, principalmente no fêmur distal e na tíbia proximal, de aspecto inespecífico, podendo representar presença de medula óssea vermelha (reconversão medular), habitualmente sem significado clínico."
+        }
+      },
+      "2": {
+        "nome": "ARTICULACOES",
+        "frases": {
+          "_ger2a": "Pequeno derrame articular com espessamento sinovial.",
+          "|ger2a": "Sinovite e pequeno derrame articular.",
+          "_ger2b": "Discreto Moderado Acentuado derrame articular com espessamento sinovial.",
+          "|ger2b": "Sinovite e discreto moderado acentuado derrame articular.",
+          "_ger2c": "Discreto Moderado Acentuado derrame articular com sinovite proliferativa.",
+          "_ger2d": "Demais espaços e cartilagens articulares preservados."
+        }
+      },
+      "3": {
+        "nome": "TENDOES E LIGAMENTOS",
+        "frases": {
+          "_ger3a": "Demais estruturas tendinosas e ligamentares com espessura e intensidade de sinal normais.",
+          "_ger3b": "O grau de suficiência ligamentar deve ser correlacionado com exame físico e/ou radiografia com \"stress\"."
+        }
+      },
+      "4": {
+        "nome": "MISC",
+        "frases": {
+          "_ger4a": "Utilizado protocolo sem contraste por solicitação do(a) paciente.",
+          "_ger4b": "Pequenos cistos ósseos subcorticais.\nCistos ósseos subcorticais medindo até 8 mm.",
+          "_ger4c": "Pequeno artefato de susceptibilidade magnética no tecido subcutâneo da região anterior (corpo estranho?)"
+        }
+      }
+    }
+  },
+  "OMB": {
+    "nome": "OMBRO",
+    "estruturas": {
+      "1": {
+        "nome": "OSSO",
+        "frases": {
+          "_omb1a": "Fratura impacção da região posterossuperior da cabeça do úmero, com extenso edema ósseo e de partes moles adjacentes, medindo 17 mm no plano axial e 18 mm no eixo craniocaudal, com profundidade de 5 mm, compatível com  lesão de Hill-Sachs.",
+          "|omb1a": "Fratura impacção da região posterossuperior da cabeça do úmero com edema ósseo e de partes moles adjacentes (lesão de Hill-Sachs)."
+        }
+      },
+      "2": {
+        "nome": "ARTICULACOES",
+        "frases": {
+          "_omb2a": "Pequeno derrame articular glenoumeral com espessamento sinovial.",
+          "|omb2a": "Sinovite e pequeno derrame articular glenoumeral.",
+          "_omb2b": "Hipertrofia capsuloligamentar da articulação acromioclavicular com esporão subacromial que comprime a região miotendínea do supraespinhal.",
+          "|omb2b": "Artrose acromioclavicular com esporão subacromial e bursite subacromial-subdeltóidea e subcoracóidea.",
+          "_omb2c": "Afilamento e heterogeneidade de sinais das cartilagens de revestimento da articulação glenoumeral com discreto edema e cistos subcondrais na região posterior da glenoide.",
+          "|omb2c": "Alterações degenerativas da articulação glenoumeral."
+        }
+      },
+      "3": {
+        "nome": "TENDOES E LIGAMENTOS",
+        "frases": {
+          "_omb3a": "Focos hiperintensos em T2 no segmento distal do tendão supraespinhal, com discretas fissuras justainsercionais.\nHeterogeneidade de sinais do tendão supraespinhal com rotura parcial de alto grau justainsercional, medindo 10 mm no eixo anteroposterior e 5 mm no eixo laterolateral, notando-se cistos subcorticais na tuberosidade maior do úmero.\nRotura completa justainsercional do tendão supraespinhal comprometendo os terços médio e anterior, medindo 12 mm no eixo anteroposterior, com retração do coto tendíneo por 35 mm até o nível da articulação acromioclavicular, discretos cistos subcorticais na cabeça do úmero e moderada atrofia / lipossubstituição do ventre muscular.\nRotura completa justainsercional dos tendões supraespinhal e infraespinhal, com retração dos cotos tendíneos por 35 mm até o nível da articulação acromioclavicular, discretos cistos subcorticais na cabeça do úmero e moderada atrofia / lipossubstituição dos ventres musculares.",
+          "|omb3a": "Tendinopatia do supraespinhal com discretas fissuras justainsercionais.\nTendinopatia do supraespinhal com rotura parcial de alto grau justainsercional.\nRotura completa justainsercional do tendão supraespinhal com retração do coto tendíneo e moderada atrofia / lipossubstituição do ventre muscular.\nRotura completa dos tendões supraespinhal e infraespinhal, com retração dos cotos tendíneos e moderada atrofia / lipossubstituição dos ventres musculares.",
+          "_omb3b": "Focos hiperintensos em T2 na porção intra-articular do tendão bicipital longo.\nHeterogeneidade de sinais da porção intra-articular do tendão bicipital longo, com rotura parcial intratendínea no segmento deflexional.",
+          "|omb3b": "Tendinopatia da porção intra-articular do bicipital longo.\nTendinopatia da porção intra-articular do bicipital longo com rotura parcial intratendínea.",
+          "_omb3c": "Alterações pós-cirúrgicas para reconstrução do manguito rotador com âncoras metálicas na tuberosidade maior do úmero, gerando artefatos de susceptibilidade magnética nas regiões adjacentes.",
+          "|omb3c": "Alterações pós-cirúrgicas para reconstrução do manguito rotador com âncoras metálicas na tuberosidade maior do úmero.",
+          "_omb3d": "Tendão supraespinhal com boa espessura e intensidade de sinal discretamente heterogênea, sem roturas transfixantes ou desinserções (tipo II / III pela classificação de Sugaya).\nTendão supraespinhal com boa espessura, apresentando intensidade de sinal heterogênea e fissuras justainsercionais, sem roturas transfixantes ou desinserções (tipo III / IV pela classificação de Sugaya).\nTendão supraespinhal afilado e com intensidade de sinal aumentada em T2, notando-se roturas de alto grau justainsercionais, mais evidentes no terço anterior (tipo IV pela classificação de Sugaya).\nTendão supraespinhal com contornos irregulares, notando-se rotura transfixante subtotal com retração do coto tendíneo por 35 mm (tipo V pela classificação de Sugaya).",
+          "|omb3d": "Tendão supraespinhal com boa espessura, sem roturas transfixantes ou desinserções.\nTendão supraespinhal com boa espessura e pequenas fissuras justainsercionais, sem roturas transfixantes ou desinserções.\nTendão supraespinhal afilado, heterogêneo, apresentando pequenas roturas de alto grau justainsercionais, mais evidentes no terço anterior.\nRotura subtotal do tendão supraespinhal com retração do coto tendíneo.",
+          "_omb3e": "Os demais tendões e os ventres musculares que formam o manguito rotador apresentam morfologia e sinal preservados."
+        }
+      },
+      "4": {
+        "nome": "MISC",
+        "frases": {
+          "_omb4a": "Distensão líquida da bursa subacromial-subdeltóidea.\nDistensão líquida das bursas subacromial-subdeltóidea e subcoracóidea.",
+          "|omb4a": "Bursite subacromial-subdeltóidea e subcoracóidea.",
+          "_omb4b": "Acrômio tipo II de Bigliani.",
+          "_omb4c": "Espessamento e aumento de sinal em T2 da cápsula articular glenoumeral nos recessos axilar e subcoracóideo, com realce pós-contraste, sugerindo capsulite.",
+          "|omb4c": "Sinais de capsulite glenoumeral.",
+          "_omb4d": "Heterogeneidade de sinais do lábio glenoidal mais evidente na região anterossuperior, de aspecto degenerativo.",
+          "|omb4d": "Alterações degenerativas do lábio glenoidal.\nAlterações degenerativas da articulação acromioclavicular e do lábio glenoidal com sinovite e pequeno derrame articular.",
+          "_omb4e": "Heterogeneidade de sinais do lábio glenoidal com imagem linear hiperintensa na região anterossuperior, estendendo-se ao complexo bicipitolabral, podendo representar rotura (lesão SLAP).",
+          "|omb4e": "Degeneração do lábio glenoidal com imagem que pode representar rotura na região anterossuperior envolvendo o complexo bicipitolabral (lesão SLAP).",
+          "_omb4f": "Heterogeneidade de sinais do lábio glenoidal com irregularidade de contornos da região anteroinferior, notando-se edema na margem da glenoide e em partes moles adjacentes, podendo representar lesão de Bankart.",
+          "|omb4f": "Imagem sugestiva de rotura do lábio glenoidal anteroinferior (lesão de Bankart). Recomenda-se correlação com estudo tomográfico para melhor avaliação da integridade óssea da glenoide."
+        }
+      },
+      "5": {
+        "nome": "MASCARAS",
+        "frases": {
+          "_omb5a": "Foram feitos cortes axiais, coronais e sagitais oblíquos em densidade de prótons (FSE) com saturação de gordura, sagitais e coronais em T2 (FSE) com saturação de gordura. Utilizado protocolo sem contraste por solicitação do(a) paciente.",
+          "_omb5b": "Após a administração de gadolínio endovenoso foram feitos cortes axiais, sagitais e sagitais oblíquos em densidade de prótons (FSE) com saturação de gordura, coronais em T2 (FSE) e T1 (FSE) com saturação de gordura.",
+          "_omb5c": "A cabeça umeral tem configuração normal.\nA medular óssea tem intensidade de sinal normal.\nO espaço entre a cabeça umeral e o acrômio está preservado.\nOs tendões que compõem o manguito rotatório têm espessura e intensidade de sinal normais.\nTendão longo do bíceps sem alterações.\nNão há derrame articular.\nA glenoide está íntegra."
+        }
+      }
+    }
+  },
+  "EST": {
+    "nome": "ESTERNOCLAVICULARES",
+    "estruturas": {
+      "1": {
+        "nome": "OSSO",
+        "frases": {}
+      },
+      "2": {
+        "nome": "ARTICULACOES",
+        "frases": {}
+      },
+      "3": {
+        "nome": "TENDOES E LIGAMENTOS",
+        "frases": {}
+      },
+      "4": {
+        "nome": "MISC",
+        "frases": {}
+      },
+      "5": {
+        "nome": "MASCARAS",
+        "frases": {}
+      }
+    }
+  },
+  "BRA": {
+    "nome": "BRAÇO",
+    "estruturas": {
+      "1": {
+        "nome": "OSSO",
+        "frases": {}
+      },
+      "2": {
+        "nome": "ARTICULACOES",
+        "frases": {}
+      },
+      "3": {
+        "nome": "TENDOES E LIGAMENTOS",
+        "frases": {}
+      },
+      "4": {
+        "nome": "MISC",
+        "frases": {}
+      },
+      "5": {
+        "nome": "MASCARAS",
+        "frases": {
+          "_bra5a": "A medular óssea tem intensidade de sinal normal.\nRelações articulares mantidas.\nPlanos gordurosos e musculares preservados.\nNão há evidência de lesão expansiva.\nEstruturas tendíneas e ligamentares sem alterações.",
+          "_bra5b": "Foram feitos cortes axiais, coronais e sagitais oblíquos em densidade de prótons (FSE) com saturação de gordura, sagitais e coronais em T2 (FSE) com saturação de gordura. Utilizado protocolo sem contraste por solicitação do(a) paciente.",
+          "_bra5c": "Após a administração de gadolínio endovenoso foram feitos cortes axiais, sagitais e sagitais oblíquos em densidade de prótons (FSE) com saturação de gordura, coronais em T2 (FSE) e T1 (FSE) com saturação de gordura."
+        }
+      }
+    }
+  },
+  "COT": {
+    "nome": "COTOVELO",
+    "estruturas": {
+      "1": {
+        "nome": "OSSO",
+        "frases": {}
+      },
+      "2": {
+        "nome": "ARTICULACOES",
+        "frases": {}
+      },
+      "3": {
+        "nome": "TENDOES E LIGAMENTOS",
+        "frases": {}
+      },
+      "4": {
+        "nome": "MISC",
+        "frases": {}
+      },
+      "5": {
+        "nome": "MASCARAS",
+        "frases": {}
+      }
+    }
+  },
+  "ABR": {
+    "nome": "ANTEBRAÇO",
+    "estruturas": {
+      "1": {
+        "nome": "OSSO",
+        "frases": {}
+      },
+      "2": {
+        "nome": "ARTICULACOES",
+        "frases": {}
+      },
+      "3": {
+        "nome": "TENDOES E LIGAMENTOS",
+        "frases": {}
+      },
+      "4": {
+        "nome": "MISC",
+        "frases": {}
+      },
+      "5": {
+        "nome": "MASCARAS",
+        "frases": {}
+      }
+    }
+  },
+  "PUN": {
+    "nome": "PUNHO",
+    "estruturas": {
+      "1": {
+        "nome": "OSSO",
+        "frases": {}
+      },
+      "2": {
+        "nome": "ARTICULACOES",
+        "frases": {
+          "_pun2a": "Discreto derrame articular radiocárpico e radioulnar distal.",
+          "|pun2a": "Discreto derrame articular radiocárpico e radioulnar distal."
+        }
+      },
+      "3": {
+        "nome": "TENDOES E LIGAMENTOS",
+        "frases": {}
+      },
+      "4": {
+        "nome": "MISC",
+        "frases": {
+          "_pun4a": "Imagem cística na região volar e radial da articulação radiocárpica, medindo 7 mm, insinuando-se profundamente aos vasos radiais, sugerindo cisto artrossinovial.",
+          "|pun4a": "Pequeno cisto artrossinovial na região volar e radial da articulação radiocárpica."
+        }
+      },
+      "5": {
+        "nome": "MASCARAS",
+        "frases": {
+          "_pun5a": "Foram feitos cortes axiais, coronais e sagitais oblíquos em densidade de prótons (FSE) com saturação de gordura, sagitais e coronais em T2 (FSE) com saturação de gordura. Utilizado protocolo sem contraste por solicitação do(a) paciente.",
+          "_pun5b": "Após a administração de gadolínio endovenoso foram feitos cortes axiais, sagitais e sagitais oblíquos em densidade de prótons (FSE) com saturação de gordura, coronais em T2 (FSE) e T1 (FSE) com saturação de gordura.",
+          "_pun5c": "A medular óssea tem intensidade de sinal normal.\nRelações articulares mantidas.\nEstruturas tendinosas e ligamentares com espessura e intensidade de sinal normais.\nNão há derrame articular.\nFibrocartilagem triangular íntegra.\nNervo mediano com espessura e intensidade de sinal normais."
+        }
+      }
+    }
+  },
+  "MAO": {
+    "nome": "MÃO",
+    "estruturas": {
+      "1": {
+        "nome": "OSSO",
+        "frases": {}
+      },
+      "2": {
+        "nome": "ARTICULACOES",
+        "frases": {}
+      },
+      "3": {
+        "nome": "TENDOES E LIGAMENTOS",
+        "frases": {}
+      },
+      "4": {
+        "nome": "MISC",
+        "frases": {}
+      },
+      "5": {
+        "nome": "MASCARAS",
+        "frases": {
+          "_mao5a": "Foram feitos cortes axiais, coronais e sagitais oblíquos em densidade de prótons (FSE) com saturação de gordura, sagitais e coronais em T2 (FSE) com saturação de gordura. Utilizado protocolo sem contraste por solicitação do(a) paciente.",
+          "_mao5b": "Após a administração de gadolínio endovenoso foram feitos cortes axiais, sagitais e sagitais oblíquos em densidade de prótons (FSE) com saturação de gordura, coronais em T2 (FSE) e T1 (FSE) com saturação de gordura.",
+          "_mao5c": "A medular óssea tem intensidade de sinal normal.\nAs cartilagens de revestimento articular têm espessura preservada e intensidade de sinal habituais.\nRelações articulares mantidas.\nEstruturas tendinosas e ligamentares com espessura e intensidade de sinal normais.\nNão há derrame articular."
+        }
+      }
+    }
+  },
+  "DED": {
+    "nome": "DEDO",
+    "estruturas": {
+      "1": {
+        "nome": "OSSO",
+        "frases": {}
+      },
+      "2": {
+        "nome": "ARTICULACOES",
+        "frases": {
+          "_ded2a": "Deformidade em boutonnière com aparente subluxação em varo da articulação metacarpofalangeana.",
+          "_ded2b": "Osteófitos nas margens das articulações metacarpofalangeanas interfalangeanas distais do 2º, 3º e 4º dedos, com discreto edema ósseo subcondral.\nOsteófitos nas margens da articulação metacarpofalangeana interfalangeana distal do 3º dedo, com discreto edema ósseo subcondral.",
+          "|ded2b": "Alterações degenerativas das articulações metacarpofalangeanas interfalangeanas distais do 2º, 3º e 4º dedos.\nAlterações degenerativas da articulação metacarpofalangeana interfalangeana distal do 3º dedo.",
+          "_ded2c": "Erosões corticais nas margens das articulações metacarpofalangeanas interfalangeanas proximais, principalmente do 2º, 3º e 4º dedos, com edema ósseo e de partes moles adjacentes.\nErosões corticais nas margens da articulação metacarpofalangeana interfalangeana proximal do 2º dedo, com edema ósseo e de partes moles adjacentes.\nSinovite e derrame articular nas metacarpofalangeanas interfalangeanas proximais, mais evidente do 2º, 3º e 4º dedos.\nSinovite e derrame articular na metacarpofalangeana interfalangeana proximal do 2º dedo.",
+          "|ded2c": "Sinovite, derrame articular e erosões corticais nas margens das articulações metacarpofalangeanas interfalangeanas proximais, principalmente do 2º, 3º e 4º dedos, com edema ósseo e de partes moles adjacentes. A possibilidade de artropatia inflamatória sistêmica deve ser considerada no diagnóstico diferencial.\nSinovite, derrame articular e erosões corticais nas margens da articulação metacarpofalangeana interfalangeana proximal do 2º dedo, com edema ósseo e de partes moles adjacentes. A possibilidade de artropatia inflamatória sistêmica deve ser considerada no diagnóstico diferencial."
+        }
+      },
+      "3": {
+        "nome": "TENDOES E LIGAMENTOS",
+        "frases": {
+          "_ded3a": "Líquido nas bainhas sinoviais dos tendões flexores do 2º, 3º e 4º dedos, com edema de partes moles adjacentes.\nLíquido na bainha sinovial do tendão flexor no 3º dedo, com edema de partes moles adjacentes.",
+          "|ded3a": "Tenossinovite do flexores no 2º, 3º e 4º dedos.\nTenossinovite do flexor do 3º dedo.",
+          "_ded3b": "Solução de continuidade da banda central terminal do tendão extensor, junto a sua inserção na base da falange média distal, sugerindo rotura.",
+          "|ded3b": "Rotura da banda central terminal do tendão extensor, junto a sua inserção na base da falange média distal.",
+          "_ded3c": "Heterogeneidade de sinais do ligamento colateral radial ulnar da articulação metacarpofalangeana interfalangeana do 2º dedo, com edema de partes moles adjacentes, sugerindo lesão parcial / estiramento.",
+          "|ded3c": "Lesão parcial / estiramento do ligamento colateral radial ulnar da articulação metacarpofalangeana interfalangeana do 2º dedo.",
+          "_ded3d": "Rotura completa do ligamento colateral radial ulnar da articulação metacarpofalangeana interfalangeana do 2º dedo, com edema de partes moles adjacentes.",
+          "|ded3d": "Rotura completa do ligamento colateral radial ulnar da articulação metacarpofalangeana interfalangeana do 2º dedo, com edema de partes moles adjacentes.",
+          "_ded3e": "Heterogeneidade de sinais da placa volar da articulação metacarpofalangeana interfalangeana do 2º dedo, com edema de partes moles adjacentes.",
+          "|ded3e": "Lesão parcial / estiramento da placa volar da articulação metacarpofalangeana interfalangeana do 2º dedo.",
+          "_ded3f": "Aumento de sinal em T2 da inserção distal e ulnar da placa volar da articulação metacarpofalangeana interfalangeana do 2º dedo, com edema de partes moles adjacentes.",
+          "|ded3f": "Lesão parcial / estiramento da inserção distal e ulnar da placa volar da articulação metacarpofalangeana interfalangeana do 2º dedo, com edema de partes moles adjacentes."
+        }
+      },
+      "4": {
+        "nome": "MISC",
+        "frases": {}
+      },
+      "5": {
+        "nome": "MASCARAS",
+        "frases": {}
+      }
+    }
+  },
+  "POL": {
+    "nome": "POLEGAR",
+    "estruturas": {
+      "1": {
+        "nome": "OSSO",
+        "frases": {}
+      },
+      "2": {
+        "nome": "ARTICULACOES",
+        "frases": {
+          "_pol2a": "Deformidade em boutonnière com aparente subluxação em varo da articulação metacarpofalangeana.",
+          "_pol2b": "Osteófitos nas margens da articulação metacarpofalangeana interfalangeana com discreto edema ósseo subcondral.",
+          "|pol2b": "Alterações degenerativas da articulação metacarpofalangeana interfalangeana.",
+          "_pol2c": "Erosões corticais nas margens da articulação metacarpofalangeana interfalangeana com edema ósseo e de partes moles adjacentes.\nSinovite e derrame articular na metacarpofalangeana interfalangeana.",
+          "|pol2c": "Sinovite, derrame articular e erosões corticais nas margens da articulação metacarpofalangeana interfalangeana com edema ósseo e de partes moles adjacentes. A possibilidade de artropatia inflamatória sistêmica deve ser considerada no diagnóstico diferencial."
+        }
+      },
+      "3": {
+        "nome": "TENDOES E LIGAMENTOS",
+        "frases": {
+          "_pol3a": "Heterogeneidade de sinais do ligamento colateral radial ulnar da articulação metacarpofalangeana interfalangeana, com edema de partes moles adjacentes, sugerindo lesão parcial / estiramento.",
+          "|pol3a": "Lesão parcial / estiramento do ligamento colateral radial ulnar da articulação metacarpofalangeana interfalangeana.",
+          "_pol3b": "Rotura completa do ligamento colateral radial ulnar da articulação metacarpofalangeana interfalangeana, com edema de partes moles adjacentes.",
+          "|pol3b": "Rotura completa do ligamento colateral radial ulnar da articulação metacarpofalangeana interfalangeana, com edema de partes moles adjacentes.",
+          "_pol3c": "Heterogeneidade de sinais da placa volar da articulação metacarpofalangeana interfalangeana, com edema de partes moles adjacentes.",
+          "|pol3c": "Lesão parcial / estiramento da placa volar da articulação metacarpofalangeana interfalangeana.",
+          "_pol3d": "Aumento de sinal em T2 da inserção distal e ulnar da placa volar da articulação metacarpofalangeana interfalangeana, com edema de partes moles adjacentes.",
+          "|pol3d": "Lesão parcial / estiramento da inserção distal e ulnar da placa volar da articulação metacarpofalangeana interfalangeana, com edema de partes moles adjacentes.",
+          "_pol3e": "Solução de continuidade da porção distal do ligamento colateral ulnar da articulação metacarpofalangeana, com retração proximal do coto ligamentar e aparente interposição da aponeurose do adutor, caracterizando lesão de Stener.",
+          "|pol3e": "Rotura do ligamento colateral ulnar da metacarpofalangeana com retração proximal e interposição da aponeurose do adutor (lesão de Stener).",
+          "_pol3f": "Líquido na bainha sinovial do tendão flexor com edema de partes moles adjacentes.",
+          "|pol3f": "Tenossinovite do flexor.",
+          "_pol3g": "Edema de partes moles adjacentes ao tendão extensor longo curto aos tendões extensores, sugerindo lesão parcial / estiramento.",
+          "|pol3g": "Lesão parcial / estiramento do tendão extensor longo curto dos tendões extensores."
+        }
+      },
+      "4": {
+        "nome": "MISC",
+        "frases": {}
+      },
+      "5": {
+        "nome": "MASCARAS",
+        "frases": {
+          "_pol5a": "A medular óssea tem intensidade de sinal normal.\nAs cartilagens de revestimento articular têm espessura preservada e intensidade de sinal habituais.\nRelações articulares mantidas.\nEstruturas tendinosas e ligamentares com espessura e intensidade de sinal normais.\nNão há derrame articular.",
+          "_pol5b": "Foram feitos cortes axiais, coronais e sagitais oblíquos em densidade de prótons (FSE) com saturação de gordura, sagitais e coronais em T2 (FSE) com saturação de gordura. Utilizado protocolo sem contraste por solicitação do(a) paciente.",
+          "_pol5c": "Após a administração de gadolínio endovenoso foram feitos cortes axiais, sagitais e sagitais oblíquos em densidade de prótons (FSE) com saturação de gordura, coronais em T2 (FSE) e T1 (FSE) com saturação de gordura."
+        }
+      }
+    }
+  },
+  "BAC": {
+    "nome": "BACIA",
+    "estruturas": {
+      "1": {
+        "nome": "OSSO",
+        "frases": {}
+      },
+      "2": {
+        "nome": "ARTICULACOES",
+        "frases": {}
+      },
+      "3": {
+        "nome": "TENDOES E LIGAMENTOS",
+        "frases": {}
+      },
+      "4": {
+        "nome": "MISC",
+        "frases": {}
+      },
+      "5": {
+        "nome": "MASCARAS",
+        "frases": {}
+      }
+    }
+  },
+  "QUA": {
+    "nome": "QUADRIL OU ARTICULAÇÃO COXOFEMORAL",
+    "estruturas": {
+      "1": {
+        "nome": "OSSO",
+        "frases": {}
+      },
+      "2": {
+        "nome": "ARTICULACOES",
+        "frases": {}
+      },
+      "3": {
+        "nome": "TENDOES E LIGAMENTOS",
+        "frases": {}
+      },
+      "4": {
+        "nome": "MISC",
+        "frases": {}
+      },
+      "5": {
+        "nome": "MASCARAS",
+        "frases": {}
+      }
+    }
+  },
+  "SIN": {
+    "nome": "SÍNFISE PUBICA",
+    "estruturas": {
+      "1": {
+        "nome": "OSSO",
+        "frases": {}
+      },
+      "2": {
+        "nome": "ARTICULACOES",
+        "frases": {}
+      },
+      "3": {
+        "nome": "TENDOES E LIGAMENTOS",
+        "frases": {}
+      },
+      "4": {
+        "nome": "MISC",
+        "frases": {}
+      },
+      "5": {
+        "nome": "MASCARAS",
+        "frases": {}
+      }
+    }
+  },
+  "SAC": {
+    "nome": "SACROILÍACAS",
+    "estruturas": {
+      "1": {
+        "nome": "OSSO",
+        "frases": {}
+      },
+      "2": {
+        "nome": "ARTICULACOES",
+        "frases": {}
+      },
+      "3": {
+        "nome": "TENDOES E LIGAMENTOS",
+        "frases": {}
+      },
+      "4": {
+        "nome": "MISC",
+        "frases": {}
+      },
+      "5": {
+        "nome": "MASCARAS",
+        "frases": {}
+      }
+    }
+  },
+  "COX": {
+    "nome": "COXA",
+    "estruturas": {
+      "1": {
+        "nome": "OSSO",
+        "frases": {}
+      },
+      "2": {
+        "nome": "ARTICULACOES",
+        "frases": {}
+      },
+      "3": {
+        "nome": "TENDOES E LIGAMENTOS",
+        "frases": {}
+      },
+      "4": {
+        "nome": "MISC",
+        "frases": {}
+      },
+      "5": {
+        "nome": "MASCARAS",
+        "frases": {}
+      }
+    }
+  },
+  "JOE": {
+    "nome": "JOELHO",
+    "estruturas": {
+      "1": {
+        "nome": "OSSO",
+        "frases": {
+          "_joe1a": "Alterações fibrocísticas subcorticais na eminência intercondiliana da tíbia, junto à inserção do ligamento cruzado anterior.\nAlterações fibrocísticas subcorticais no platô tibial posterior, junto à inserção do ligamento cruzado posterior."
+        }
+      },
+      "2": {
+        "nome": "ARTICULACOES",
+        "frases": {
+          "_joe2a": "Discretos focos hiperintensos em T2 na cartilagem patelar, mais evidentes na faceta lateral, atingindo a camada superficial, sem alteração de sinal do osso subcondral.",
+          "|joe2a": "Condropatia patelar superficial.",
+          "_joe2b": "Focos hiperintensos em T2 na cartilagem patelar com fissura condral na faceta lateral, sem alteração de sinal do osso subcondral.",
+          "|joe2b": "Condropatia patelar com fissura condral na faceta e edema do coxim adiposo suprapatelar.",
+          "_joe2c": "Afilamento difuso e heterogeneidade de sinais da cartilagem patelar com edema, cistos subcondrais e pequenas lesões osteocondrais no vértice.\nHeterogeneidade de sinais da cartilagem de revestimento da tróclea femoral, mais evidente no sulco troclear.",
+          "|joe2c": "Condropatia patelar (grau IV) e da tróclea femoral com edema do coxim adiposo suprapatelar.",
+          "_joe2d": "Irregularidade de contornos das cartilagens de revestimento do compartimento femorotibial medial com tênues focos de edema ósseo subcondral.",
+          "|joe2d": "Alterações degenerativas do compartimento femorotibial medial.",
+          "_joe2e": "Afilamento e heterogeneidade de sinais das cartilagens de revestimento do compartimento femorotibial medial, com edema ósseo subcondral e pequenas lesões osteocondrais nas periferias do platô tibial e do côndilo femoral.",
+          "|joe2e": "Artrose femorotibial medial.\nArtrose femorotibial medial com degeneração do menisco e rotura na transição entre o corpo e o corno posterior.",
+          "_joe2f": "Edema e cistos subcorticais na eminência intercondiliana da tíbia, junto à inserção do ligamento cruzado posterior.",
+          "_joe2g": "Cistos subcondrais na região posterolateral do platô tibial, junto à articulação tibiofibular proximal.",
+          "_joe2h": "As cartilagens de revestimento do compartimento femorotibial medial lateral apresentam espessura e sinal normais."
+        }
+      },
+      "3": {
+        "nome": "TENDOES E LIGAMENTOS",
+        "frases": {
+          "_joe3a": "Ligamento cruzado anterior com intensidade de sinal aumentada em T2, sem solução de continuidade completa de suas fibras, podendo representar alteração degenerativa.",
+          "|joe3a": "Alterações degenerativas do ligamento cruzado anterior. O grau de suficiência ligamentar deve ser correlacionado com exame físico e/ou radiografia com \"stress\".\nSinais de degeneração mixoide do ligamento cruzado anterior. O grau de suficiência ligamentar deve ser correlacionado com exame físico e/ou radiografia com \"stress\".",
+          "_joe3b": "Ligamento cruzado anterior com intensidade de sinal heterogênea e contornos irregulares, podendo representar rotura parcial.",
+          "|joe3b": "Sinais sugestivos de rotura parcial do ligamento cruzado anterior. O grau de suficiência ligamentar deve ser correlacionado com exame físico e/ou radiografia com \"stress\".",
+          "_joe3c": "Ligamento cruzado anterior com intensidade de sinal heterogênea, notando-se solução de continuidade das suas fibras no terço superior e horizontalização da sua porção proximal, sugerindo rotura completa.",
+          "|joe3c": "Rotura completa do ligamento cruzado anterior.",
+          "_joe3d": "Heterogeneidade de sinais do ligamento colateral medial lateral dos ligamentos colaterais medial e lateral com edema de partes moles adjacentes.",
+          "|joe3d": "Lesão parcial / estiramento do ligamento colateral medial lateral dos ligamentos colaterais medial e lateral.",
+          "_joe3e": "Entesopatia calcificada quadricipital distal.",
+          "_joe3f": "Aumento de sinal em T2 na porção proximal do tendão patelar com edema de partes moles ao redor.",
+          "|joe3f": "Tendinopatia patelar proximal.",
+          "_joe3g": "Espessamento hipointenso da porção superior do ligamento colateral medial lateral, sem solução de continuidade de suas fibras.",
+          "|joe3g": "Alterações cicatriciais do ligamento colateral medial.\nEspessamento cicatricial do ligamento colateral medial e lateral."
+        }
+      },
+      "4": {
+        "nome": "MISC",
+        "frases": {
+          "_joe4a": "Edema do coxim adiposo suprapatelar.",
+          "_joe4b": "Alterações pós-cirúrgicas para ligamentoplastia do cruzado anterior, com parafusos no fêmur e na tíbia, notando-se neoligamento íntegro.\nAlterações pós-cirúrgicas para ligamentoplastia do cruzado anterior, com parafusos no fêmur e na tíbia, notando-se sinais de rotura completa do neoligamento.",
+          "_joe4c": "Distensão líquida do recesso sinovial do semimembranoso / gastrocnêmio medial com sinais de rotura na porção inferior e infiltração líquida perifascial na região posterior da perna.",
+          "|joe4c": "Sinovite e pequeno moderado acentuado derrame articular com cisto poplíteo.\nSinovite e pequeno moderado acentuado derrame articular com ciso poplíteo roto e infiltração líquida perifascial na região posterior da perna.",
+          "_joe4d": "Distensão líquida da bursa infrapatelar profunda.",
+          "|joe4d": "Bursite infrapatelar profunda.",
+          "_joe4e": "Aumento de sinal em T2 no corno posterior do menisco medial lateral dos meniscos medial e lateral, de aspecto degenerativo.",
+          "|joe4e": "Alterações degenerativas do menisco medial lateral dos meniscos mediais e lateral.",
+          "_joe4f": "Heterogeneidade de sinais do menisco medial lateral com imagem linear hiperintensa no corno posterior atingindo a superfície articular inferior, sugerindo rotura.",
+          "|joe4f": "Degeneração do menisco medial lateral com sinais de rotura do corno posterior.\nRotura do corno posterior do menisco medial lateral.",
+          "_joe4g": "Redução das dimensões do menisco lateral, notando-se acentuada irregularidade de contornos do corno posterior e extrusão (meniscectomia parcial com rotura dos cotos meniscais?).",
+          "|joe4g": "Artrose femorotibial medial, com sinais de meniscectomia parcial e aparente rotura do coto meniscal com extrusão.\nSinais de meniscectomia parcial medial com rotura do coto meniscal e extrusão.",
+          "_joe4h": "O menisco medial lateral tem morfologia e sinal normais."
+        }
+      },
+      "5": {
+        "nome": "MASCARAS",
+        "frases": {
+          "_joe5a": "Foram feitos cortes axiais, coronais e sagitais oblíquos em densidade de prótons (FSE) com saturação de gordura, sagitais e coronais em T2 (FSE) com saturação de gordura. Utilizado protocolo sem contraste por solicitação do(a) paciente.",
+          "_joe5b": "Após a administração de gadolínio endovenoso foram feitos cortes axiais, sagitais e sagitais oblíquos em densidade de prótons (FSE) com saturação de gordura, coronais em T2 (FSE) e T1 (FSE) com saturação de gordura.",
+          "_joe5c": "A medular óssea tem intensidade de sinal normal.\nRelações articulares mantidas.\nLigamentos colaterais, cruzados, tendões patelar e do quadríceps morfologicamente íntegros.\nOs meniscos têm configuração e intensidade de sinal normais.\nNão há derrame articular.\nCartilagem patelar preservada."
+        }
+      }
+    }
+  },
+  "PER": {
+    "nome": "PERNA",
+    "estruturas": {
+      "1": {
+        "nome": "OSSO",
+        "frases": {}
+      },
+      "2": {
+        "nome": "ARTICULACOES",
+        "frases": {}
+      },
+      "3": {
+        "nome": "TENDOES E LIGAMENTOS",
+        "frases": {}
+      },
+      "4": {
+        "nome": "MISC",
+        "frases": {}
+      },
+      "5": {
+        "nome": "MASCARAS",
+        "frases": {}
+      }
+    }
+  },
+  "TOR": {
+    "nome": "TORNOZELO",
+    "estruturas": {
+      "1": {
+        "nome": "OSSO",
+        "frases": {}
+      },
+      "2": {
+        "nome": "ARTICULACOES",
+        "frases": {
+          "_tor2a": "Lesão osteocondral no domo talar medial lateral, medindo 8 x 7 mm no plano axial, com discreto edema da medular óssea ao redor.",
+          "|tor2a": "Lesão osteocondral no domo talar medial lateral com edema ósseo ao redor.",
+          "_tor2b": "Afilamento das cartilagens de revestimento da articulação tibiotalar, com discretos cistos e edema ósseo subcondral na epífise distal da tíbia, de aspecto degenerativo.",
+          "|tor2b": "Alterações degenerativas da articulação tibiotalar.",
+          "_tor2c": "Sinais sugestivos de coalisão óssea fibrosa fibrocartilaginosa da articulação calcaneonavicular com proeminência do processo anterior do calcâneo, discreto edema e cistos nas margens da sincondrose.",
+          "|tor2c": "Sinais de coalisão óssea fibrosa fibrocartilaginosa da articulação calcaneonavicular, com discreto edema e cistos nas margens da sincondrose, sugerindo microinstabilidade local.",
+          "_tor2d": "Pequeno Moderado Acentuado derrame articular tibiotalar e subtalar posterior com espessamento das membranas sinoviais.\nPequeno Moderado Acentuado derrame articular tibiotalar, subtalar posterior e talocalcaneo-navicular com espessamento sinovial.",
+          "|tor2d": "Pequeno Moderado Acentuado derrame articular tibiotalar e subtalar posterior.\nSinovite e pequeno moderado acentuado derrame articular tibiotalar e subtalar posterior.\nSinovite e pequeno moderado acentuado derrame articular tibiotalar, subtalar posterior e talocalcaneo-navicular."
+        }
+      },
+      "3": {
+        "nome": "TENDOES E LIGAMENTOS",
+        "frases": {
+          "_tor3a": "Aumento de sinal em T2 do ligamento talofibular anterior, sem solução de continuidade de suas fibras, podendo representar estiramento.\nHeterogeneidade de sinais dos ligamentos talofibular anterior e calcaneofibular, sugerindo lesões parciais ou estiramento.\nHeterogeneidade de sinais e irregularidade de contornos do ligamento talofibular anterior, sugerindo rotura parcial de alto grau ou completa.\nRotura completa do ligamento talofibular anterior na sua inserção na fíbula no tálus com edema de partes moles adjacentes.\nRotura completa dos ligamentos talofibular anterior e calcaneofibular com edema de partes moles adjacentes.",
+          "|tor3a": "Estiramento do ligamento talofibular anterior.\nEstiramento dos ligamentos talofibular anterior e calcaneofibular.\nLesão parcial / estiramento do ligamento talofibular anterior.\nRotura de alto grau ou completa do ligamento talofibular anterior com edema de partes moles adjacentes. O grau de suficiência ligamentar deve ser correlacionado com exame físico e/ou radiografia com \"stress\".\nRotura completa dos ligamentos talofibular anterior e calcaneofibular com rotura de partes moles adjacentes.",
+          "_tor3b": "Líquido na bainha sinovial dos tendões tibial posterior, flexor longo dedos e fibulares.",
+          "_tor3c": "Heterogeneidade de sinais da porção média distal das porções média e distal do tendão de Aquiles com discreto edema de partes moles ao redor e entesopatia calcificada distal.",
+          "|tor3c": "Tendinopatia e peritendinite do Aquiles com entesopatia calcificada distal."
+        }
+      },
+      "4": {
+        "nome": "MISC",
+        "frases": {
+          "_tor4a": "Ossículo navicular acessório do tipo I II III (variação anatômica).\nPresença de ossículo fibular acessório (variação anatômica).",
+          "_tor4b": "Presença de músculo fibular acessório inserindo-se na eminência retrotroclear do calcâneo (variação anatômica).\nPresença de músculo fibular acessório (variação anatômica).",
+          "_tor4c": "Heterogeneidade de sinais da origem da fáscia plantar com edema de partes moles adjacentes.\nEspessamento e heterogeneidade de sinais da origem da fáscia plantar medial com fissuras intrassubstanciais e entesopatia calcificada proximal.\nEspessamento hipointenso da origem da fáscia plantar medial com entesopatia calcificada proximal.\nEspessamento hipointenso da origem da fáscia plantar medial.",
+          "|tor4c": "Fasciite plantar com fissuras intrassubstanciais e entesopatia calcificada proximal.\nFasciite plantar com entesopatia calcificada proximal.\nSinais de fasciite plantar.\nFasciite plantar crônica."
+        }
+      },
+      "5": {
+        "nome": "MASCARAS",
+        "frases": {
+          "_tor5a": "A medular óssea tem intensidade de sinal normal.\nRelações articulares mantidas.\nEspaços e cartilagem articular preservados.\nEstruturas tendinosas e ligamentares sem alterações.\nNão há derrame articular.\nFáscia plantar sem anormalidades.",
+          "_tor5b": "Foram feitos cortes axiais, coronais e sagitais oblíquos em densidade de prótons (FSE) com saturação de gordura, sagitais e coronais em T2 (FSE) com saturação de gordura. Utilizado protocolo sem contraste por solicitação do(a) paciente.",
+          "_tor5c": "Após a administração de gadolínio endovenoso foram feitos cortes axiais, sagitais e sagitais oblíquos em densidade de prótons (FSE) com saturação de gordura, coronais em T2 (FSE) e T1 (FSE) com saturação de gordura."
+        }
+      }
+    }
+  },
+  "APE": {
+    "nome": "ANTEPÉ",
+    "estruturas": {
+      "1": {
+        "nome": "OSSO",
+        "frases": {
+          "_ape1a": "Aumento de sinal em T2 na medular óssea do 4º metatarso com edema de partes moles adjacentes, sugerindo alteração por estresse.\nAumento de sinal em T2 na medular óssea do 3º e 4º metatarsos, com edema de partes moles adjacentes, sugerindo alterações por estresse.",
+          "|ape1a": "Edema da medular óssea do 4º metatarso e de partes moles adjacentes, sugerindo alteração por estresse.\nEdema das medulares ósseas do 3º e 4º metatarsos e de partes moles adjacentes, sugerindo alterações por estresse."
+        }
+      },
+      "2": {
+        "nome": "ARTICULACOES",
+        "frases": {
+          "_ape2a": "Hálux valgo.\nHálux valgo com subluxação lateral do sesamoides.",
+          "_ape2b": "Heterogeneidade de sinais das cartilagens de revestimento da articulação metatarsofalangiana do hálux com discretos cistos subcondrais, de aspecto degenerativo.\nAfilamento das cartilagens de revestimento da articulação metatarsofalangiana do hálux e do compartimento glenossesamoideo medial lateral dos compartimentos glenossesamóideos, com edema e cistos subcondrais.\nAfilamento das cartilagens de revestimento da articulação metatarsofalangiana do hálux, com edema, cistos subcondrais e osteofitose mais evidente na região dorsal.",
+          "|ape2b": "Discretas alterações degenerativas da articulação metatarsofalangiana do hálux.\nAlterações degenerativas da articulação metatarsofalangiana do hálux e do compartimento glenossesamoideo medial lateral dos compartimentos glenossesamóideos.\nAlterações degenerativas da articulação metatarsofalangiana do hálux, com osteofitose mais evidente na região dorsal. A possibilidade de hallux rigidus deve ser considerada no diagnóstico diferencial."
+        }
+      },
+      "3": {
+        "nome": "TENDOES E LIGAMENTOS",
+        "frases": {}
+      },
+      "4": {
+        "nome": "MISC",
+        "frases": {
+          "_ape4a": "Heterogeneidade de sinais da placa plantar da articulação metatarsofalangiana do 2º pododáctilo com irregularidade de contornos da sua inserção distal e lateral na base da falange proximal.",
+          "|ape4a": "Degeneração da placa plantar da articulação metatarsofalangiana do 2º pododáctilo, com lesão parcial da sua inserção distal e lateral.",
+          "_ape4b": "Distensão líquida da bursa intermetatarsal do 2º espaço interdigital, com obliteração de planos adiposos distais medindo 6 mm, podendo representar neuroma.\nDistensão líquida das bursas intermetatarsais do 2º, 3º e 4º espaços interdigitais, com obliteração de planos adiposos distais medindo respectivamente 5 mm, 6 mm e 7 mm, podendo representar neuromas.\nDistensão líquida da bursa intermetatarsal do 2º espaço interdigital com imagem sugestiva de neuroma medindo 6 mm.\nDistensão líquida das bursas intermetatarsais do 2º, 3º e 4º espaços interdigitais, com imagens sugestivas de neuromas, medindo respectivamente 5 mm, 6 mm e 7 mm.",
+          "|ape4b": "Bursite intermetatarsal do 2º espaço interdigital com imagem que pode representar neuroma de Morton.\nBursite intermetatarsal do 2º, 3º e 4º espaços interdigitais com imagens que podem representar neuromas de Morton.\nBursite intermetatarsal do 2º espaço interdigital com imagem sugestiva de neuroma de Morton.\nBursite intermetatarsal do 2º, 3º e 4º espaços interdigitais com imagens sugestivas de neuromas de Morton."
+        }
+      },
+      "5": {
+        "nome": "MASCARAS",
+        "frases": {
+          "_ape5a": "A medular óssea tem intensidade de sinal normal.\nRelações articulares mantidas.\nEspaços e cartilagem articular preservados.\nEstruturas tendinosas e ligamentares sem alterações.\nNão há derrame articular.\nAusência de nódulos intermetatársicos.\nFáscia plantar sem anormalidades.",
+          "_ape5b": "Foram feitos cortes coronais em T1 (SE), axiais, sagitais e coronais em densidade de prótons (FSE) com saturação de gordura. Utilizado protocolo sem contraste por solicitação do(a) paciente.",
+          "_ape5c": "Foram feitos cortes coronais em T1 (SE), axiais, sagitais e coronais em densidade de prótons (FSE) com saturação de gordura. Após a administração de gadolínio endovenoso foram feitos cortes coronais em T1 (SE) com e sem saturação de gordura e axiais em densidade de prótons (FSE) com saturação de gordura."
+        }
+      }
+    }
+  },
+  "RCL": {
+    "nome": "RM COLUNA LOMBAR",
+    "estruturas": {
+      "1": {
+        "nome": "OSSO",
+        "frases": {}
+      },
+      "2": {
+        "nome": "DISCO INTERVERTEBRAL",
+        "frases": {}
+      },
+      "3": {
+        "nome": "MEDULA ESPINHAL",
+        "frases": {}
+      },
+      "4": {
+        "nome": "MISC",
+        "frases": {}
+      },
+      "5": {
+        "nome": "MÁSCARA E CONTRASTE",
+        "frases": {}
+      }
+    }
+  },
+  "TCL": {
+    "nome": "TC COLUNA LOMBAR",
+    "estruturas": {
+      "1": {
+        "nome": "OSSO",
+        "frases": {}
+      },
+      "2": {
+        "nome": "DISCO INTERVERTEBRAL",
+        "frases": {}
+      },
+      "3": {
+        "nome": "MEDULA ESPINHAL",
+        "frases": {}
+      },
+      "4": {
+        "nome": "MISC",
+        "frases": {}
+      },
+      "5": {
+        "nome": "MÁSCARA E CONTRASTE",
+        "frases": {}
+      }
+    }
+  },
+  "RCT": {
+    "nome": "RM COLUNA TORÁCICA",
+    "estruturas": {
+      "1": {
+        "nome": "OSSO",
+        "frases": {}
+      },
+      "2": {
+        "nome": "DISCO INTERVERTEBRAL",
+        "frases": {}
+      },
+      "3": {
+        "nome": "MEDULA ESPINHAL",
+        "frases": {}
+      },
+      "4": {
+        "nome": "MISC",
+        "frases": {}
+      },
+      "5": {
+        "nome": "MÁSCARA E CONTRASTE",
+        "frases": {}
+      }
+    }
+  },
+  "TCT": {
+    "nome": "TC COLUNA TORÁCICA",
+    "estruturas": {
+      "1": {
+        "nome": "OSSO",
+        "frases": {}
+      },
+      "2": {
+        "nome": "DISCO INTERVERTEBRAL",
+        "frases": {}
+      },
+      "3": {
+        "nome": "MEDULA ESPINHAL",
+        "frases": {}
+      },
+      "4": {
+        "nome": "MISC",
+        "frases": {}
+      },
+      "5": {
+        "nome": "MÁSCARA E CONTRASTE",
+        "frases": {}
+      }
+    }
+  },
+  "RCC": {
+    "nome": "RM COLUNA CERVICAL",
+    "estruturas": {
+      "1": {
+        "nome": "OSSO",
+        "frases": {}
+      },
+      "2": {
+        "nome": "DISCO INTERVERTEBRAL",
+        "frases": {}
+      },
+      "3": {
+        "nome": "MEDULA ESPINHAL",
+        "frases": {}
+      },
+      "4": {
+        "nome": "MISC",
+        "frases": {}
+      },
+      "5": {
+        "nome": "MÁSCARA E CONTRASTE",
+        "frases": {}
+      }
+    }
+  },
+  "TCC": {
+    "nome": "TC COLUNA CERVICAL",
+    "estruturas": {
+      "1": {
+        "nome": "OSSO",
+        "frases": {}
+      },
+      "2": {
+        "nome": "DISCO INTERVERTEBRAL",
+        "frases": {}
+      },
+      "3": {
+        "nome": "MEDULA ESPINHAL",
+        "frases": {}
+      },
+      "4": {
+        "nome": "MISC",
+        "frases": {}
+      },
+      "5": {
+        "nome": "MÁSCARA E CONTRASTE",
+        "frases": {}
+      }
+    }
+  },
+  "RSC": {
+    "nome": "RM SACRO CÓCCIX",
+    "estruturas": {
+      "1": {
+        "nome": "OSSO",
+        "frases": {}
+      },
+      "2": {
+        "nome": "DISCO INTERVERTEBRAL",
+        "frases": {}
+      },
+      "3": {
+        "nome": "MEDULA ESPINHAL",
+        "frases": {}
+      },
+      "4": {
+        "nome": "MISC",
+        "frases": {}
+      },
+      "5": {
+        "nome": "MÁSCARA E CONTRASTE",
+        "frases": {}
+      }
+    }
+  },
+  "TSC": {
+    "nome": "TC SACRO CÓCCIX",
+    "estruturas": {
+      "1": {
+        "nome": "OSSO",
+        "frases": {}
+      },
+      "2": {
+        "nome": "DISCO INTERVERTEBRAL",
+        "frases": {}
+      },
+      "3": {
+        "nome": "MEDULA ESPINHAL",
+        "frases": {}
+      },
+      "4": {
+        "nome": "MISC",
+        "frases": {}
+      },
+      "5": {
+        "nome": "MÁSCARA E CONTRASTE",
+        "frases": {}
+      }
+    }
+  },
+  "TAB": {
+    "nome": "TC ABDOME",
+    "estruturas": {
+      "1": {
+        "nome": "FÍGADO, BAÇO, PÂNCREAS E VIAS BILIARES",
+        "frases": {}
+      },
+      "2": {
+        "nome": "RINS, ADRENAIS, URETERES E BEXIGA",
+        "frases": {}
+      },
+      "3": {
+        "nome": "INTESTINO, RETO, ESTÔMAGO, RETROPERITÔNIO",
+        "frases": {}
+      },
+      "4": {
+        "nome": "MISC",
+        "frases": {}
+      },
+      "5": {
+        "nome": "MÁSCARA E CONTRASTE",
+        "frases": {}
+      }
+    }
+  },
+  "RAB": {
+    "nome": "RM ABDOME",
+    "estruturas": {
+      "1": {
+        "nome": "FÍGADO, BAÇO, PÂNCREAS E VIAS BILIARES",
+        "frases": {}
+      },
+      "2": {
+        "nome": "RINS, ADRENAIS, URETERES E BEXIGA",
+        "frases": {}
+      },
+      "3": {
+        "nome": "INTESTINO, RETO, ESTÔMAGO, RETROPERITÔNIO",
+        "frases": {}
+      },
+      "4": {
+        "nome": "MISC",
+        "frases": {}
+      },
+      "5": {
+        "nome": "MÁSCARA E CONTRASTE",
+        "frases": {}
+      }
+    }
+  },
+  "TTO": {
+    "nome": "TC TÓRAX",
+    "estruturas": {
+      "1": {
+        "nome": "PULMÕES E PLEURA",
+        "frases": {}
+      },
+      "2": {
+        "nome": "CORAÇÃO, MEDIASTINO, GRANDES VASOS, LINFONODOS, ESOFAGO",
+        "frases": {}
+      },
+      "3": {
+        "nome": "ACHADOS PARA TEP",
+        "frases": {}
+      },
+      "4": {
+        "nome": "MISC",
+        "frases": {}
+      },
+      "5": {
+        "nome": "MÁSCARA E CONTRASTE",
+        "frases": {}
+      }
+    }
+  }
+}
