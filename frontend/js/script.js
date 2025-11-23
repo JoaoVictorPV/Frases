@@ -295,7 +295,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Lógica para Salvar Edição
         if (target.classList.contains('btn-salvar-frase')) {
-            const novoTexto = fraseTextoDiv.textContent;
+            // innerText preserva quebras de linha visuais (\n)
+            const novoTexto = fraseTextoDiv.innerText;
             try {
                 // NOVA ROTA: PUT /api/frases/update com body JSON
                 const response = await fetch('/api/frases/update', {
