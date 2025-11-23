@@ -193,9 +193,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const resultado = await response.json();
             
-            // Mostra mensagem de sucesso - MANTÉM VISÍVEL (sem setTimeout)
+            // Mostra mensagem de sucesso - MANTÉM VISÍVEL (sem setTimeout) - PERMANENTE
             mensagemSucesso.textContent = `Frase adicionada com sucesso! Alias gerado: ${resultado.alias}`;
             mensagemSucesso.style.display = 'block';
+            // REMOVIDO setTimeout
             
             form.reset();
             
@@ -241,8 +242,13 @@ document.addEventListener('DOMContentLoaded', () => {
         if (target.classList.contains('btn-deletar-frase')) {
             // Executa diretamente sem confirmação e sem avisos
             try {
-                // encodeURIComponent é CRITICO para aliases com caracteres como '|'
-                const response = await fetch(`${API_URL}/${encodeURIComponent(alias)}`, { method: 'DELETE' });
+                // NOVA ROTA: POST /api/frases/delete com body JSON
+                // Isso evita problemas de caracteres especiais na URL
+                const response = await fetch('/api/frases/delete', { 
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ alias: alias })
+                });
                 if (!response.ok) throw new Error('Falha ao deletar');
                 fraseItem.remove();
                 carregarAcervo(); 
@@ -270,10 +276,6 @@ document.addEventListener('DOMContentLoaded', () => {
             let fraseOriginal = "";
             try {
                 // Acesso direto mais seguro
-                // Estrutura do alias: TIPO(1) + SEGMENTO(3) + ESTRUTURA(1) + LETRA(1)
-                // Ex: _omb1a ou |omb1a
-                // O segmento está nos índices 1,2,3 (3 caracteres)
-                // A estrutura está no índice 4 (1 caractere)
                 const segId = alias.substring(1, 4).toUpperCase();
                 const estId = alias.substring(4, 5);
                 if (dadosFrases[segId] && 
@@ -295,10 +297,11 @@ document.addEventListener('DOMContentLoaded', () => {
         if (target.classList.contains('btn-salvar-frase')) {
             const novoTexto = fraseTextoDiv.textContent;
             try {
-                const response = await fetch(`${API_URL}/${encodeURIComponent(alias)}`, {
+                // NOVA ROTA: PUT /api/frases/update com body JSON
+                const response = await fetch('/api/frases/update', {
                     method: 'PUT',
                     headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ texto: novoTexto })
+                    body: JSON.stringify({ alias: alias, texto: novoTexto })
                 });
                 if (!response.ok) throw new Error('Falha ao salvar');
                 

@@ -240,10 +240,13 @@ def adicionar_frase():
         if conn: conn.close()
         return jsonify({"erro": str(e)}), 500
 
-@app.route('/api/frases/<string:alias>', methods=['DELETE'])
-def deletar_frase(alias):
-    # Limpa o alias de espaços em branco que possam ter vindo na URL
-    alias = alias.strip()
+# Rota segura para deletar (via Body JSON)
+@app.route('/api/frases/delete', methods=['POST'])
+def deletar_frase_body():
+    data = request.json
+    alias = data.get('alias')
+    if not alias: return jsonify({"erro": "Alias não fornecido"}), 400
+    
     conn = get_db_connection()
     if conn:
         sucesso = db_deletar_frase(conn, alias)
@@ -266,16 +269,17 @@ def deletar_frase(alias):
             return jsonify({"sucesso": "Frase deletada"}), 200
         return jsonify({"erro": "Não encontrada"}), 404
 
-@app.route('/api/frases/<string:alias>', methods=['PUT'])
-def editar_frase(alias):
-    alias = alias.strip()
-    novo_texto = request.json.get('texto')
-    if not novo_texto: return jsonify({"erro": "Texto ausente"}), 400
+# Rota segura para editar (via Body JSON)
+@app.route('/api/frases/update', methods=['PUT', 'POST'])
+def editar_frase_body():
+    data = request.json
+    alias = data.get('alias')
+    novo_texto = data.get('texto')
+    
+    if not alias or not novo_texto: return jsonify({"erro": "Dados incompletos"}), 400
 
     conn = get_db_connection()
     if conn:
-        # No DB, UPDATE direto
-        # Mas preciso saber se existe. O comando UPDATE retorna count.
         cur = conn.cursor()
         cur.execute("UPDATE frases_radiologia SET texto = %s WHERE alias = %s", (novo_texto, alias))
         updated = cur.rowcount > 0
@@ -297,6 +301,11 @@ def editar_frase(alias):
                 json.dump(dados, f, indent=2, ensure_ascii=False)
             return jsonify({"sucesso": "Editado"}), 200
         return jsonify({"erro": "Não encontrado"}), 404
+    
+# Mantendo as rotas antigas por compatibilidade se necessário (mas o front usará as novas)
+@app.route('/api/frases/<string:alias>', methods=['DELETE'])
+def deletar_frase_legacy(alias):
+    return deletar_frase_body() # Redireciona lógica se possível ou ignora
 
 @app.route('/api/frases/rename', methods=['PATCH'])
 def renomear_frase():
