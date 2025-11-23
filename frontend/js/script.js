@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const API_URL = 'http://127.0.0.1:5000/api/frases';
+    // Usa caminho relativo para funcionar tanto local quanto na Vercel
+    const API_URL = '/api/frases';
 
     const form = document.getElementById('form-adicionar-frase');
     const selectSegmento = document.getElementById('select-segmento');
@@ -319,7 +320,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Adiciona evento de clique para o botão de exportar
     const btnExportar = document.getElementById('btn-exportar-txt');
     btnExportar.addEventListener('click', () => {
-        window.location.href = 'http://127.0.0.1:5000/api/export/txt';
+        window.location.href = '/api/export/txt';
     });
 
     // Carga inicial dos dados

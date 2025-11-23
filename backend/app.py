@@ -55,7 +55,8 @@ def db_inserir_frase(conn, alias, texto, segmento, estrutura, tipo):
 
 def db_listar_frases(conn):
     cur = conn.cursor()
-    cur.execute("SELECT alias, texto, segmento, estrutura, tipo FROM frases_radiologia")
+    # Garante ordenação pelo alias para consistência no frontend e reordenação
+    cur.execute("SELECT alias, texto, segmento, estrutura, tipo FROM frases_radiologia ORDER BY alias ASC")
     rows = cur.fetchall()
     cur.close()
     return rows
